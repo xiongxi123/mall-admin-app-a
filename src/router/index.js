@@ -9,6 +9,7 @@ const routes = [
     path: '/',
     name: 'HomeViews',
     component: HomeView,
+    children: []
   },
   {
     path: '/about',
