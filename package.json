@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "ant-design-vue": "^1.2.4",
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
@@ -45,7 +46,16 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "rules": {
+        "generator-star-spacing": "off",
+        "no-tabs": "off",
+        "no-unused-vars": "off",
+        "no-console": "off",
+        "no-irregular-whitespace": "off",
+        "no-debugger": "off"
+      }
+    }
   },
   "browserslist": [
     "> 1%",
