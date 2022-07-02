@@ -5,15 +5,16 @@
     </a-button>
     <div class="breadcrumb">
       <a-breadcrumb>
-        <a-breadcrumb-item>首页</a-breadcrumb-item>
-        <a-breadcrumb-item><a href="">统计</a></a-breadcrumb-item>
+        <a-breadcrumb-item>商品</a-breadcrumb-item>
+        <a-breadcrumb-item><a href="">商品列表</a></a-breadcrumb-item>
       </a-breadcrumb>
     </div>
     <div class="user-info">
-      <li>欢迎dongmeiqi
+      <li class="user-name">
+        {{$store.state.user.username}}
         <a-icon type="down" />
       </li>
-      <li>退出</li>
+      <li class="login-out">退出</li>
     </div>
   </div>
 </template>

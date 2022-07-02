@@ -11,9 +11,8 @@ instance.interceptors.response.use((response) => {
   console.log(response); 
   if(response.data.status === 'fail'){
     return Promise.reject(response.data.msg);
-  }else{
-    return response.data.data;
   }
+  return response.data.data;
 },(error) => Promise.reject(error));                 
 
 export default instance;
